@@ -1,4 +1,4 @@
-    {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,7 +13,16 @@
      align-items: center;
      background: linear-gradient(135deg, #1e3c72, #2a5298);
    }
-   
+
+   .calculator {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    width: 320px;
+    max-width: 90%;
+  }
+
    .display {
     width: 100%;
     height: 70px;
@@ -33,16 +42,16 @@
     gap: 10px;
   }
 
-  button{
+  button {
     padding: 20px;
     font-size: 1.2rem;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: 0.2;
+    transition: 0.2s;
   }
 
-  button:haver {
+  button:hover {
     transform: scale(1.05);
     opacity: 0.9;
   }
@@ -58,6 +67,12 @@
    }
 
    .btn-equal {
+    background: #28a745;
+    color: #fff;
+    grid-column: span 2;
+   }
+
+   .btn-clear {
     background: #dc3545;
     color: #fff;
     grid-column: span 2;
@@ -71,7 +86,8 @@
 
    .display {
     font-size: 1.5rem;
-
+  } 
+}
      
 
 

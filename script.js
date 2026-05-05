@@ -23,7 +23,7 @@ function handleInput(value) {
       display.innerText += value;
     }
   }   
-
+}
   // suporte ao teclado
   document.addEventListener('keydown', (e) => {
     if (!isNaN(e.key) || ['+','-','*','/','.'].includes(e.key)) {
@@ -31,7 +31,7 @@ function handleInput(value) {
     } else if (e.key === 'enter') {
       handleInput ('=');
     } else if (e.key === 'Backspace') {
-      display.innerText = display.innerText.slice(0, -1)
+      display.innerText = display.innerText.slice(0, -1) || '0'
       handleInput('C');
     }
   });   
